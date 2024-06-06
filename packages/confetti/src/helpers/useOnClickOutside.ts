@@ -24,7 +24,7 @@ export function useOnClickOutside({
   handler?: Function;
 } = {}) {
   React.useEffect(() => {
-    window[awayClickBrowserProp] = window[awayClickBrowserProp] || new Map();
+    window[awayClickBrowserProp] = new Map();
 
     window[awayClickBrowserProp].set(elementRefs, handler);
     document.addEventListener("click", outsideClickHandler, true);
