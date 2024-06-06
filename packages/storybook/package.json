@@ -1,0 +1,22 @@
+{
+  "name": "@kazoohr/storybook",
+  "description": "Repo-wide Storybook implementation",
+  "version": "1.0.0",
+  "team": "innersource",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "storybook": "yarn start-storybook -p 9002 -c .storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-essentials": "^6.5",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/builder-webpack5": "^6.5",
+    "@storybook/manager-webpack5": "^6.5",
+    "@storybook/react": "^6.5",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

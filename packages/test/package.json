@@ -1,0 +1,15 @@
+{
+  "name": "@kazoohr/test",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "team": "innersource",
+  "description": "Test utilities",
+  "private": true,
+  "repository": "github:KazooHR/kazoo-web",
+  "devDependencies": {
+    "@testing-library/dom": "^10",
+    "@testing-library/react": "^15",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [
+    "yarn.lock",
+    "package.json",
+    ".nvmrc",
+    ".yarnrc.yml"
+  ],
+  "pipeline": {
+    "postinstall": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  }
+}

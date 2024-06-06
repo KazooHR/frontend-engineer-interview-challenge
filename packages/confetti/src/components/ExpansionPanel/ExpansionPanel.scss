@@ -1,0 +1,29 @@
+.full-width {
+  width: 100%;
+}
+
+.expansion-panel {
+  display: none;
+}
+
+.expansion-panel-open {
+  display: block;
+  overflow: hidden;
+}
+
+.expansion-panel-open.expansion-panel-animated {
+  animation: expansion-panel-pop-in 0.5s;
+}
+
+@keyframes expansion-panel-pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) translateX(-100%);
+    max-height: 1px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0%);
+    max-height: 999px;
+  }
+}

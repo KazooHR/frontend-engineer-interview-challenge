@@ -1,0 +1,26 @@
+{
+  "name": "@kazoohr/webpack",
+  "version": "1.0.0",
+  "team": "innersource",
+  "description": "Webpack tooling that builds our user interfaces.",
+  "private": true,
+  "scripts": {
+    "bundle:analyze": "NODE_ENV=production webpack --mode=production --config ./src/bundleAnalyzerConfig.ts",
+    "bundle:production": "NODE_ENV=production webpack --mode=production --config ./src/webpackConfig.ts"
+  },
+  "devDependencies": {
+    "@swc/core": "1.2.120",
+    "css-loader": "^3.2.0",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1",
+    "sass-loader": "^10",
+    "source-map-loader": "^1.1.0",
+    "style-loader": "^1.0.0",
+    "swc-loader": "0.1.15",
+    "terser-webpack-plugin": "^5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
